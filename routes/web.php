@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\todoController;
 
@@ -13,8 +14,8 @@ use App\Http\Controllers\todoController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', [ todoController::class, 'index']);
+Route::get('/', [ AuthController::class, 'index']);
+Route::get('/index', [ todoController::class, 'index']);
 
 Route::get('/create' , [ todoController::class, 'create' ]);
 Route::post('/create' , [ todoController::class, 'store' ]);
@@ -26,4 +27,11 @@ Route::get('/delete/{id}' , [ todoController::class, 'destroy' ]);
 
 Route::get('/edit/{id}' , [todoController::class, 'edit']);
 Route::post('/edit/{id}' , [todoController::class, 'update' ]);
+
+Route::get('/login', [ AuthController::class, 'login']);
+Route::post('login/authenticate', [ AuthController::class, 'authenticate']);
+
+Route::get('/register', [ AuthController::class, 'register']);
+Route::post('/register', [ AuthController::class, 'registerPost']);
+Route::post('/index', [ AuthController::class, 'logout']);
 
