@@ -28,7 +28,7 @@
                                 <div class="card-header"><h3 class="card-title">Task in Progress</h3></div>
                                 <div class="card-body">
                                     @foreach ($todotasks as $todotask)
-                                        <div class="card mb-3">
+                                        <div class="card mb-3" id="ptask">
                                             <div class="card-header bg-warning">
                                                 <h5 class="card-title">Task {{$todotask->id}}</h5>
                                             </div>
@@ -59,7 +59,7 @@
                                 <div class="card-body">
                                     @foreach ($comtask as $ctask)
                                     {{-- @dd($ctask); --}}
-                                        <div class="card mb-3">
+                                        <div class="card mb-3" id="ctask">
                                             <div class="card-header bg-success">
                                                 <h5 class="card-title">Task {{$ctask->id}}</h5>
                                             </div>

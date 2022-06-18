@@ -1,0 +1,52 @@
+#authindexcard1{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+  
+#authindexcard1:hover{
+    transform: translateY(-20px);
+    box-shadow: 5px 5px 20px black;
+}
+#authindexcard2{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+  
+#authindexcard2:hover{
+    transform: translateY(-20px);
+    box-shadow: 5px 5px 20px black;
+}
+#authindexcard3{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+  
+#authindexcard3:hover{
+    transform: translateY(-20px);
+    box-shadow: 5px 5px 20px black;
+}
+#textcard{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+  
+#textcard:hover{
+    transform: translateY(-20px);
+    box-shadow: 5px 5px 20px black;
+}
+#ptask{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#ptask:hover{
+    transform: translateY(-20px);
+    box-shadow: 5px 5px 20px black;
+}
+#ctask{
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#ctask:hover{
+    transform: translateY(-20px);
+    box-shadow: 5px 5px 20px black;
+}
